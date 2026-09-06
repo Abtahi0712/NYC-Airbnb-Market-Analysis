@@ -1,0 +1,4 @@
+-- 04_analysis_queries.sql
+-- Purpose: Queries that directly answer the business questions defined in
+-- Step 2, using the cleaned data.
+-- Filled in during Step 6 (Analyze and Answer).

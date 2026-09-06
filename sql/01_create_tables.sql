@@ -1,0 +1,3 @@
+-- 01_create_tables.sql
+-- Purpose: Define the schema (tables, columns, data types) for the raw dataset.
+-- Filled in during Step 3 (Data Discovery) once we've picked the dataset.

@@ -1,0 +1,4 @@
+-- 02_data_cleaning.sql
+-- Purpose: Clean the raw data at the database level -- remove duplicates,
+-- handle nulls, fix data types, standardize text formatting.
+-- Filled in during Step 4 (Data Cleaning).

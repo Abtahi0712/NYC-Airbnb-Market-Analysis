@@ -1,0 +1,4 @@
+-- 03_eda_queries.sql
+-- Purpose: Exploratory queries to get familiar with the data (row counts,
+-- min/max, distributions) -- not yet answering business questions.
+-- Filled in during Step 5 (EDA).

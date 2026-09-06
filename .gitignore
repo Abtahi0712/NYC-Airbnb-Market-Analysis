@@ -1,0 +1,17 @@
+# Byte-compiled / cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python virtual environment
+.venv/
+venv/
+
+# VS Code settings (local only)
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
