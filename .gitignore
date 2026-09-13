@@ -15,3 +15,6 @@ venv/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Stray output folder from Claude Code sessions (not part of the project)
+Claude outputs/
