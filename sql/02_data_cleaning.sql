@@ -25,6 +25,14 @@
 -- been shifting listings to 30+ night minimums to operate outside that law while staying
 -- on the platform. Excluding them focuses the analysis on the actual short-term market
 -- our stakeholder operates in.
+--
+-- Note on the row count: 20,331 - 15,048 = 5,283, but listings_clean ends up with 5,280
+-- rows. The 3-row difference is NOT an error -- those listings have a NULL
+-- minimum_nights. In SQL, any comparison against NULL evaluates to NULL rather than
+-- TRUE, so `minimum_nights < 30` excludes them too, exactly as `minimum_nights >= 30`
+-- would have. They are genuinely unclassifiable for a rule based on minimum stay
+-- length, so dropping them is the correct outcome -- but it is worth stating
+-- explicitly rather than leaving an unexplained gap in the arithmetic.
 
 -- Decision: license column dropped entirely -- 83% NULL, not used in any business question.
 
