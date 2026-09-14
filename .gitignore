@@ -18,3 +18,8 @@ Thumbs.db
 
 # Stray output folder from Claude Code sessions (not part of the project)
 Claude outputs/
+
+ 
+# Personal interview rehearsal notes -- not part of the public portfolio
+interview_prep.md
+ 
