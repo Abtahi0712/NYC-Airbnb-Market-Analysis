@@ -19,7 +19,7 @@
 -- RANK() OVER (PARTITION BY neighbourhood_group ORDER BY median_price DESC)
 -- resets the ranking separately for each borough, so "rank 1" means
 -- "highest median price room type, within this specific borough" -- not
--- highest across all 25 segments combined. That's the more useful business
+-- highest across all 20 segments combined. That's the more useful business
 -- answer: a property manager operating in Queens cares which room type is
 -- the top performer IN Queens, not that it happens to be cheaper than the
 -- cheapest Manhattan segment.
@@ -261,10 +261,11 @@ ORDER BY neighbourhood_group, saturation_rank_in_borough;
 -- Hotel room, and Staten Island Shared room. Brooklyn (39 listings) and
 -- Manhattan (303 listings) are credible findings; Bronx (4) and Staten
 -- Island Shared room (2) are too small to trust as a real pattern. This
--- closes the loop across all four questions: Hotel room is highest-priced
--- (Q1), lowest-demand (Q2), fully saturated by professional operators
--- (Q3), and now confirmed weak-performing (Q4) -- four independent
--- analyses agreeing on the same conclusion.
+-- closes the loop across all four questions: Hotel room commands the top
+-- median price in Manhattan (Q1), yet is lowest-demand in every borough
+-- (Q2), fully saturated by professional operators (Q3), and now confirmed
+-- weak-performing (Q4) -- four independent analyses agreeing that a high
+-- headline price is not the same as a strong segment.
 
 WITH segment_performance AS (
     SELECT
