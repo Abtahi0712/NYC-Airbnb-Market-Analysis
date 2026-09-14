@@ -146,5 +146,8 @@ and is scoped to short-term listings only. Full detail in [`insights.md`](insigh
 
 ## Author
 
+**Abtahi Bin Jahangir Chowdhury**
+[GitHub](https://github.com/Abtahi0712)
+
 Built as a portfolio project to demonstrate an end-to-end SQL → Python → Power BI
 analytics workflow, from raw data through business recommendations.
